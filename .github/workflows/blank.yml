@@ -1,20 +1,14 @@
-name: Build
+name: Sample Build Test
 
 on:
+  push:
+    branches:
+      - main
+
   workflow_dispatch:
-    inputs:
-      version_type:
-        description: "Select version bump type"
-        required: true
-        default: "patch"
-        type: choice
-        options:
-          - major
-          - minor
-          - patch
 
 jobs:
-  Build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
