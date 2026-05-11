@@ -1,10 +1,6 @@
 name: Sample Build Test
 
 on:
-  push:
-    branches:
-      - main
-
   workflow_dispatch:
 
 jobs:
